@@ -40,7 +40,7 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-        'aadmin' => [
+        'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
         ],
