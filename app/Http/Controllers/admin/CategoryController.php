@@ -10,10 +10,19 @@ use App\Models\Category;
 
 class CategoryController extends Controller
 {
-    public function index(){
+    public function index(Request $request){
+
+        $categories = Category::latest();
+        if(!empty($request->get('keyword'))){
+            $categories=$categories->where('name','like','%'.$request->get('keyword').'%');
+        }
+
+
+
+
         // $categories = Category::orderBy('created_at','DESC')->paginate(10);
         // orderBy is ka shortcut h latest same kam karta h order descending order may 
-        $categories = Category::latest()->paginate(10);
+        $categories = $categories->paginate(10);
         // dd($categories);
 
 

@@ -68,14 +68,20 @@
        $("#categoryForm").submit(function(event){
         event.preventDefault();
         var element =$(this);
+        $("button[type=submit]").prop('disabled',true);
         $.ajax({
             url:'{{ route("categories.store")}}',
             type:'post',
             data:element.serializeArray(),
             dataType:'json',
             success: function(response){
+                $("button[type=submit]").prop('disabled',false);
 
                 if(response["status"]==true){
+
+
+                    window.location.href="{{route('categories.index')}}";
+
                     $("#name").removeClass('is-valid').siblings('p').removeClass('invalid-feedback').html("");
                     $("#slug").removeClass('is-valid').siblings('p').removeClass('invalid-feedback').html("");
                 }else{
@@ -105,6 +111,7 @@
 
        $("#name").change(function(){
             element =$(this);
+            $("button[type=submit]").prop('disabled',true);
             $.ajax({
                 url:'{{ route("getSlug")}}',
                 type:'get',
@@ -112,6 +119,7 @@
                 dataType:'json',
                 success: function(response){
                     if(response["status"]==true){
+                        $("button[type=submit]").prop('disabled',false);
                         $('#slug').val(response["slug"])
                     }
 
