@@ -5,14 +5,17 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AdminloginController;
 use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\admin\HomeController;
+use App\Http\Controllers\admin\TempImagesController;
+use App\Http\Controllers\FrontController;
 use Illuminate\Http\Request;
+use League\Flysystem\UrlGeneration\TemporaryUrlGenerator;
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[FrontController::class,'index'])->name('front.home');
 
-// Route::get('/admin/login',[AdminloginController::class,'index'])->name('admin.login');
 Route::group(['prefix' => 'admin'],function(){
 
     Route::group(['middleware' => 'admin.guest'],function(){
@@ -28,7 +31,12 @@ Route::group(['prefix' => 'admin'],function(){
         //Category Routes
         Route::get('/categories',[CategoryController::class,'index'])->name('categories.index');
         Route::get('/categories/create',[CategoryController::class,'create'])->name('categories.create');
+        // ajax ya pay hit huga
         Route::post('/categories',[CategoryController::class,'store'])->name('categories.store');
+
+        //temp-images.create
+        Route::post('/uploadimage',[TempImagesController::class,'create'])->name('tempimages.create');
+
 
         Route::get('/getSlug',function(Request $request){
             $slug='';

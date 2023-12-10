@@ -21,7 +21,7 @@
     <!-- Default box -->
     <div class="container-fluid">
 
-        <form action="" method="post" id="categoryForm" name="categoryForm">
+        <form action="{{route('categories.store')}}" method="post" id="categoryForm" name="categoryForm" >
         <div class="card">
             <div class="card-body">								
                 <div class="row">
@@ -31,6 +31,7 @@
                             <input type="text" name="name" id="name" class="form-control" placeholder="Name">	
                         <p></p>
                         </div>
+                        @csrf
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3">
@@ -38,6 +39,20 @@
                             <input type="text" readonly name="slug" id="slug" class="form-control" placeholder="Slug">	
                         </div>
                         <p></p>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <input type="hidden" id="image_id" name="image_id" value="">
+                            <label for="image">Image</label>
+                            <div id="image" class="dropzone dz-clickable">
+                                <div class="dz-message needsclick">    
+                                    <br>Drop files here or click to upload.<br><br>                                            
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3">
@@ -72,7 +87,7 @@
         $.ajax({
             url:'{{ route("categories.store")}}',
             type:'post',
-            data:element.serializeArray(),
+            data: element.serializeArray(),
             dataType:'json',
             success: function(response){
                 $("button[type=submit]").prop('disabled',false);
@@ -85,22 +100,23 @@
                     $("#name").removeClass('is-valid').siblings('p').removeClass('invalid-feedback').html("");
                     $("#slug").removeClass('is-valid').siblings('p').removeClass('invalid-feedback').html("");
                 }else{
+
                     var errors = response['errors'];
-                if(errors['names']){
-                    $("#name").addClass('is-invalid').siblings('p').addClass('invalid-feedback').html(errors['name']);
-                }else{
-                    $("#name").removeClass('is-valid').siblings('p').removeClass('invalid-feedback').html("");
+                    if(errors['names']){
+                        $("#name").addClass('is-invalid').siblings('p').addClass('invalid-feedback').html(errors['name']);
+                    }else{
+                        $("#name").removeClass('is-valid').siblings('p').removeClass('invalid-feedback').html("");
 
-                }
+                    }
 
 
-                if(errors['slug']){
-                    $("#slug").addClass('is-valid').siblings('p').addClass('invalid-feedback').html(errors['slug']);
-                }
-                else{
-                    $("#slug").removeClass('is-valid').siblings('p').removeClass('invalid-feedback').html("");
+                    if(errors['slug']){
+                        $("#slug").addClass('is-valid').siblings('p').addClass('invalid-feedback').html(errors['slug']);
+                    }
+                    else{
+                        $("#slug").removeClass('is-valid').siblings('p').removeClass('invalid-feedback').html("");
 
-                }
+                    }
                 }
             
             }, error: function(jqXHR,exception){
@@ -120,12 +136,35 @@
                 success: function(response){
                     if(response["status"]==true){
                         $("button[type=submit]").prop('disabled',false);
-                        $('#slug').val(response["slug"])
+                        $('#slug').val(response["slug"]);
                     }
 
                 }
             }); 
         });
+
+
+         Dropzone.autoDiscover = false;    
+         const dropzone = $("#image").dropzone({ 
+                init: function() {
+                    this.on('addedfile', function(file) {
+                        if (this.files.length > 1) {
+                            this.removeFile(this.files[0]);
+                        }
+                    });
+                },
+                url: '{{route("tempimages.create")}}',
+                maxFiles: 1,
+                paramName: 'image',
+                addRemoveLinks: true,
+                acceptedFiles: "image/jpeg,image/png,image/gif",
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }, success: function(file, response){
+                    $("#image_id").val(response.image_id);
+                    //console.log(response)
+                }
+});
       
        
     </script>

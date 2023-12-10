@@ -29,7 +29,7 @@
                     </div>
                         <div class="card-tools">
                             <div class="input-group input-group" style="width: 250px;">
-                                <input value="{{Request::get('keyword')}}" type="keyword" name="table_search" class="form-control float-right" placeholder="Search">
+                                <input value="{{Request::get('keyword')}}" type="text" name="keyword" class="form-control float-right" placeholder="Search">
             
                                 <div class="input-group-append">
                                   <button type="submit" class="btn btn-default">
