@@ -43,7 +43,7 @@
                     
                     <div class="col-md-6">
                         <div class="mb-3">
-                            <input type="hidden" id="image_id" name="image_id" value="">
+                            <input type="hidden" id="image" name="image_id" value="">
                             <label for="image">Image</label>
                             <div id="image" class="dropzone dz-clickable">
                                 <div class="dz-message needsclick">    
@@ -54,6 +54,7 @@
 
 
                     </div>
+                    
                     <div class="col-md-6">
                         <div class="mb-3">
                             <label for="status">Status</label>
@@ -85,7 +86,7 @@
         var element =$(this);
         $("button[type=submit]").prop('disabled',true);
         $.ajax({
-            url:'{{ route("categories.store")}}',
+            url:'{{ route("categories.store") }}',
             type:'post',
             data: element.serializeArray(),
             dataType:'json',
@@ -123,13 +124,13 @@
                 console.log("Something went wrong");
             }
         })
-       });
+     });
 
        $("#name").change(function(){
             element =$(this);
             $("button[type=submit]").prop('disabled',true);
             $.ajax({
-                url:'{{ route("getSlug")}}',
+                url:'{{ route("getSlug") }}',
                 type:'get',
                 data:{title: element.val()},
                 dataType:'json',
