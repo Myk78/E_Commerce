@@ -57,7 +57,8 @@ class CategoryController extends Controller
         $category = Category::create([
             'name' => $request->name,
             'slug' => $request->slug,
-            'status' => $request->status
+            'status' => $request->status,
+            'showHome' => $request->showHome
         ]);
 
         //save image here
@@ -139,8 +140,11 @@ class CategoryController extends Controller
         $category = Category::create([
             'name' => $request->name,
             'slug' => $request->slug,
-            'status' => $request->status
+            'status' => $request->status,
+            'showHome' => $request->showHome
         ]);
+
+        $oldImage = $category->image;
 
         //save image here
         if(!empty($request->image_id)){

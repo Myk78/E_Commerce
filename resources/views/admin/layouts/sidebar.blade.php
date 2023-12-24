@@ -23,13 +23,51 @@
                     </a>																
                 </li>
                 <li class="nav-item">
+                    <a href="{{route('admin.Hotel.Hotelist')}}" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Hotel's</p>
+                    </a>																
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.Hotel.hotelbook.list')}}" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Hotel Booking</p>
+                    </a>																
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.Transport.list')}}" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Transport's</p>
+                    </a>																
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.Transport.bookTrans.list')}}" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Transport Booking</p>
+                    </a>																
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.Transport.list')}}" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>TripPackage</p>
+                    </a>																
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('admin.Transport.bookTrans.list')}}" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>Trip Booking</p>
+                    </a>																
+                </li>
+                
+                
+                <li class="nav-item">
                     <a href="{{route('categories.index')}}" class="nav-link">
                         <i class="nav-icon fas fa-file-alt"></i>
                         <p>Category</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="subcategory.html" class="nav-link">
+                    <a href="{{route('sub-categories.index')}}" class="nav-link">
                         <i class="nav-icon fas fa-file-alt"></i>
                         <p>Sub Category</p>
                     </a>

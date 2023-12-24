@@ -64,13 +64,22 @@
                         </select>
                         <p></p>
                         </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="status">Show on productpage</label>
+                            <select name="showHome" id="showHome" class="form-control">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
                     </div>									
                 </div>
             </div>							
         </div>
         <div class="pb-5 pt-3">
             <button type="submit" class="btn btn-primary">Create</button>
-            <a href="subcategory.html" class="btn btn-outline-dark ml-3">Cancel</a>
+            <a href="{{route('sub-categories.index')}}" class="btn btn-outline-dark ml-3">Cancel</a>
         </div>
     </form>
     </div>
