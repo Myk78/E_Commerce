@@ -1,8 +1,8 @@
     
 {{-- //header --}}
-@include('front.layouts.app')
+@extends('front.layouts.app')
 
-
+@section('content')
 <main>
     <section class="section-1">
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
@@ -66,37 +66,7 @@
             </button>
         </div>
     </section>
-    <section class="section-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="box shadow-lg">
-                        <div class="fa icon fa-check text-primary m-0 mr-3"></div>
-                        <h2 class="font-weight-semi-bold m-0">Quality Product</h5>
-                    </div>                    
-                </div>
-                <div class="col-lg-3 ">
-                    <div class="box shadow-lg">
-                        <div class="fa icon fa-shipping-fast text-primary m-0 mr-3"></div>
-                        <h2 class="font-weight-semi-bold m-0">Free Shipping</h2>
-                    </div>                    
-                </div>
-                {{-- <div class="col-lg-3">
-                    <div class="box shadow-lg">
-                        <div class="fa icon fa-exchange-alt text-primary m-0 mr-3"></div>
-                        <h2 class="font-weight-semi-bold m-0">14-Day Return</h2>
-                    </div>                    
-                </div> --}}
-                <div class="col-lg-3 ">
-                    <div class="box shadow-lg">
-                        <div class="fa icon fa-phone-volume text-primary m-0 mr-3"></div>
-                        <h2 class="font-weight-semi-bold m-0">24/7 Support</h5>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </section>
-
+   
     <section class="section-4 pt-5">
         <div class="container">
             <div class="section-title">
@@ -106,7 +76,6 @@
                 <div class="col-md-12">
                     <div class=" product-card">
                         <div class="product-image position-relative">
-  
                         </div>                        
                         <div class="card-body text-center mt-3">
                             <div class="mt-2">
@@ -114,7 +83,6 @@
                                      Discover seamless travel at Tour Tracker. We bring together hotels, transport, recreation, attractions, tours, and an E-Commerce marketplace. With real-time updates and stringent security, plan your unique journey effortlessly.
                                      Tour Tracker goes beyond, offering a comprehensive solution for a personalized travel experience. Your adventure begins here!
                                 </span>
-                                <
                             </div>
                         </div>                        
                     </div>                                               
@@ -131,10 +99,10 @@
             </div>           
             <div class="row pb-3">
                 <div class="col-lg-3">
-                    <a href="#">
+                    <a href="{{ route('front.Hotel.HotelPage') }}">
                         <div class="cat-card">
                             <div class="left">
-                                <img src="{{asset('front-assets/images/hotel.jpg')}}" alt="" class="img-fluid">
+                                <img src="{{asset('front-assets/images/Hotels.jpg')}}" alt="" class="img-fluid">
                             </div>
                             <div class="right">
                                 <div class="cat-data">
@@ -164,7 +132,7 @@
                     <a href="#">
                         <div class="cat-card">
                             <div class="left">
-                                <img src="{{asset('front-assets/images/package.jpg')}}" alt="" class="img-fluid">
+                                <img src="{{asset('front-assets/images/tour Package.jpg')}}" alt="" class="img-fluid">
                             </div>
                             <div class="right">
                                 <div class="cat-data">
@@ -179,7 +147,7 @@
                     <a href="{{route('front.tour')}}">
                      <div class="cat-card">
                          <div class="left">
-                             <img src="{{asset('front-assets/images/Touristattract.jpg')}}" alt="" class="img-fluid">
+                             <img src="{{asset('front-assets/images/Tour Guide.jpg')}}" alt="" class="img-fluid">
                          </div>
                          <div class="right">
                              <div class="cat-data">
@@ -194,7 +162,7 @@
                     <a href="{{route('front.commerce.home')}}">
                         <div class="cat-card">
                             <div class="left">
-                                <img src="{{asset('front-assets/images/product-1.jpg')}}" alt="" class="img-fluid">
+                                <img src="{{asset('front-assets/images/E-Commerce.jpg')}}" alt="" class="img-fluid">
                             </div>
                             <div class="right">
                                 <div class="cat-data">
@@ -210,9 +178,38 @@
             </div>
         </div>
     </section>
-    
-    
 
+    <section class="section-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="box shadow-lg">
+                        <div class="fa icon fa-check text-primary m-0 mr-3"></div>
+                        <h2 class="font-weight-semi-bold m-0">Quality Product</h5>
+                    </div>                    
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="box shadow-lg">
+                        <div class="fa icon fa-shipping-fast text-primary m-0 mr-3"></div>
+                        <h2 class="font-weight-semi-bold m-0">Free Shipping</h2>
+                    </div>                    
+                </div>
+                <div class="col-lg-3">
+                    <div class="box shadow-lg">
+                        <div class="fa icon fa-exchange-alt text-primary m-0 mr-3"></div>
+                        <h2 class="font-weight-semi-bold m-0">14-Day Return</h2>
+                    </div>                    
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="box shadow-lg">
+                        <div class="fa icon fa-phone-volume text-primary m-0 mr-3"></div>
+                        <h2 class="font-weight-semi-bold m-0">24/7 Support</h5>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section class="section-4 pt-5">
         <div class="container">
             <div class="section-title">
@@ -391,7 +388,7 @@
         </div>
     </section>
 
-    <section class="section-4 pt-5">
+    <section class="section-5 ">
         <div class="container">
             <div class="section-title">
                 <h2>Contact Us</h2>
@@ -399,7 +396,7 @@
             <div class="container">
                 <div class="row mx-auto">
                       <div class="col-md-6 mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">First name</label>
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">First Name</label>
                         <div class="col-sm-10">
                           <input type="name" class="form-control" id="inputEmail3">
                         </div>
@@ -424,19 +421,29 @@
                           <input type="name" class="form-control" id="inputEmail3">
                         </div>
                       </div>
-        
-                      <div class=" mb-3">
+
+                      <div class="col-12 col-md-6 mb-3">
                         <label for="exampleFormControlInput1" class="form-label label">Email address</label>
-                        <input type="email" class="form-control"  id="exampleFormControlInput1" placeholder="name@example.com">
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control"  id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
                       </div>
-                      <button type="submit" class="mx-auto btn btn-primary">Submit</button>
+                      <div class="col-12">
+                        <button type="submit" class="mx-auto btn btn-primary">Submit</button>
+                      </div>
+        
                   </div>
+                  
                 </div>
         </div>
     </section>
+    
 </main>
+    
+@endsection
 
-@include('front.layouts.footer')
+{{-- 
+@extends('front.layouts.footer') --}}
 
 <script>
 window.onscroll = function() {myFunction()};

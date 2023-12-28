@@ -7,10 +7,10 @@
     <div class="container-fluid my-2">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Transport's</h1>
+                <h1>Package's</h1>
             </div>
             <div class="col-sm-6 text-right">
-                <a href="{{ route('admin.Transport.AddTransport') }}" class="btn btn-primary">Add New Transport</a>
+                <a href="{{ route('admin.Transport.AddTour') }}" class="btn btn-primary">Add New Package</a>
             </div>
         </div>
     </div>
@@ -40,11 +40,11 @@
                         <tr>
                             <th width="60">ID</th>
                             <th>Title</th>
-                            <th>VehicalImage</th>
-                            <th>VehicalName</th>
-                            <th>VehicalDiscription</th>
-                            <th>Perday Rate</th>
-                            <th>Vehical Type</th>
+                            <th>Package Image</th>
+                            <th>Package Name</th>
+                            <th>Package description</th>
+                            <th>Price</th>
+                            <th>No of Passengers</th>
                             
                             <th width="100">Status</th>
                             <th width="100">Action</th>
@@ -53,12 +53,12 @@
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>Honda</td>
-                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlDPt4FkSvm1o40XJuvNUMrOEX2kt3JuwncV8JRiP6w&s" alt="" width="60px" height="60px" class="rounded"></td>
-                            <td>Corola Gli</td>
-                            <td>The Average of this car is 5.6kilometer </td>
-                            <td>6000</td>
-                            <td>Car</td>
+                            <td>2 Days</td>
+                            <td><img src="https://www.travelo.pk/images/packages/sep18saifulmulook_cover.png" alt="" width="60px" height="60px" class="rounded"></td>
+                            <td>Murree</td>
+                            <td>In this package we will provide you 4 meal and transport to </td>
+                            <td>18000</td>
+                            <td>2</td>
                             <td>
                                 <svg class="text-success-500 h-6 w-6 text-success" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>

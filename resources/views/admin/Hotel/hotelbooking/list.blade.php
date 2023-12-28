@@ -39,11 +39,12 @@
                     <thead>
                         <tr>
                             <th width="60">UserID</th>
-                            <th>HotelID</th>
-                            <th>HotelImage</th>
+                            <th>Hotel ID</th>
+                            <th>Hotel Image</th>
+                            <th>PerNight Price</th>
                             <th>Customer Name</th>
-                            <th>Customer cnic</th>
-                            <th>cnicImage</th>
+                            <th>Customer Cnic</th>
+                            <th>Cnic Image</th>
                             <th>Number</th>
                             <th>Email</th>
                             <th>Roomtype</th>
@@ -56,12 +57,23 @@
                             <td>1</td>
                             <td>1</td>
                             <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSabzx_PMPj-VU338BLZlUx5E72JL_ZcCvXh29vEGtg&s" alt="" width="60px" height="60px" class="rounded"></td>
+                            <td>4000</td>
                             <td>Muhammad yaseen</td>
                             <td>44402-6589647-9 </td>
-                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXSabzx_PMPj-VU338BLZlUx5E72JL_ZcCvXh29vEGtg&s" alt="" width="60px" height="60px" class="rounded"></td>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjREoX8Gxt8QVn-p_ISmXjUpLAwUFffeNwMrly8mOwbQ&s" alt="" width="60px" height="60px" class="rounded"></td>
                             <td>0323234434</td>
                             <td>xyz@gmail.com</td>
                             <td>deluxe</td>
+                            <td>
+                                <a href="">
+                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 48 48">
+                                    <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                                    </svg>    
+                                </a>
+                                <a href="">
+                                   <img src="{{asset('adminassets/img/Cross.png')}}" width="50px" height="50px" alt="">
+                                </a>
+                            </td>
                             
                           
                         </tr>

@@ -47,13 +47,13 @@
                     </a>																
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('admin.Transport.list')}}" class="nav-link">
+                    <a href="{{route('admin.Tourtrip.list')}}" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>TripPackage</p>
                     </a>																
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('admin.Transport.bookTrans.list')}}" class="nav-link">
+                    <a href="{{route('admin.Tourtrip.booktour.list')}}" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>Trip Booking</p>
                     </a>																

@@ -19,16 +19,24 @@ use League\Flysystem\UrlGeneration\TemporaryUrlGenerator;
 // });
 
 
-// dashboard home
+// user side Home Page's
 Route::get('/',[FrontController::class,'index'])->name('front.home');
 
-// Ecommerce Route
+
+// user side hotel page's
+Route::get('/HotelDashboardPage',function () {
+    return view('front.Hotel.home');
+})->name('front.Hotel.HotelPage');
+
+
+
+// user side Ecommerce Route
 Route::get('/Ecommercedashboard',[EfrontController::class,'index'])->name('front.commerce.home');
 Route::get('/Eshop',[EshopController::class,'index'])->name('front.commerce.shop');
 
 
 
-// tour guide route
+// user side tour guide route
 Route::get('/TourGuide',[TourController::class,'index'])->name('front.tour');
 
 Route::get('/Tourdashboard',function () {
@@ -43,8 +51,6 @@ Route::get('/TourGuide',function () {
 
 
  // admin -------------------Hotel routes
-
-
  //create route
  Route::get('/Hotel',function () {
     return view('admin.Hotel.create');
@@ -60,7 +66,7 @@ Route::get('/HotelEdit',function () {
 })->name('admin.Hotel.EditHotel');
 
 //Hotel booking in admin route
-Route::get('/HotelBook',function () {
+Route::get('/HotelBooking',function () {
     return view('admin.Hotel.hotelbooking.list');
 })->name('admin.Hotel.hotelbook.list');
 
@@ -84,6 +90,27 @@ Route::get('/TransportEdit',function () {
 Route::get('/TransportBook',function () {
     return view('admin.Transport.bookTransport.list');
 })->name('admin.Transport.bookTrans.list');
+ 
+
+
+// admin -------------------Tourpackage routes
+ //create route
+ Route::get('/AddTourpackage',function () {
+    return view('admin.Tourtrip.create');
+})->name('admin.Transport.AddTour');
+//list route
+Route::get('/Packageslist',function () {
+    return view('admin.Tourtrip.list');
+})->name('admin.Tourtrip.list');
+//Edit route
+Route::get('/EditPackage',function () {
+    return view('admin.Tourtrip.edit');
+})->name('admin.Tourtrip.edit');
+
+//Transport booking in admin route
+Route::get('/tourBooking',function () {
+    return view('admin.Tourtrip.booktour.list');
+})->name('admin.Tourtrip.booktour.list');
  
 
 

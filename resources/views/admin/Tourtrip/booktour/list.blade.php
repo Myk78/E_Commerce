@@ -7,7 +7,7 @@
     <div class="container-fluid my-2">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>Transport Booking</h1>
+                <h1>Trip Booking</h1>
             </div>
             {{-- <div class="col-sm-6 text-right">
                 <a href="{{ route('admin.Hotel.AddHotel') }}" class="btn btn-primary">Add New Hotel</a>
@@ -39,15 +39,15 @@
                     <thead>
                         <tr>
                             <th width="60">User ID</th>
-                            <th>Transport ID</th>
-                            <th>Transport Image</th>
-                            <th>PerDay Charges</th>
+                            <th>Package Title</th>
+                            <th>Package Image</th>
+                            <th>Package Price</th>
                             <th>Customer Name</th>
                             <th>Customer Cnic</th>
                             <th>Cnic Image</th>
                             <th>Number</th>
                             <th>Email</th>
-                            <th>Vehicaltype</th>
+                            <th>Tour Package</th>
                             <th>Availability</th>
 
                         </tr>
@@ -55,15 +55,39 @@
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>1</td>
-                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYlDPt4FkSvm1o40XJuvNUMrOEX2kt3JuwncV8JRiP6w&s" alt="" width="60px" height="60px" class="rounded"></td>
-                            <td>6000</td>
+                            <td>2 Days</td>
+                            <td><img src="https://www.travelo.pk/images/packages/sep18saifulmulook_cover.png" alt="" width="60px" height="60px" class="rounded"></td>
+                            <td>18000</td>
                             <td>Muhammad yaseen</td>
                             <td>44402-6589647-9 </td>
                             <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjREoX8Gxt8QVn-p_ISmXjUpLAwUFffeNwMrly8mOwbQ&s" alt="" width="60px" height="60px" class="rounded"></td>
                             <td>0323234434</td>
                             <td>xyz@gmail.com</td>
-                            <td>Car</td>
+                            <td>Murree</td>
+                            <td>
+                                <a href="">
+                                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 48 48">
+                                    <path fill="#c8e6c9" d="M36,42H12c-3.314,0-6-2.686-6-6V12c0-3.314,2.686-6,6-6h24c3.314,0,6,2.686,6,6v24C42,39.314,39.314,42,36,42z"></path><path fill="#4caf50" d="M34.585 14.586L21.014 28.172 15.413 22.584 12.587 25.416 21.019 33.828 37.415 17.414z"></path>
+                                    </svg>    
+                                </a>
+                                <a href="">
+                                   <img src="{{asset('adminassets/img/Cross.png')}}" width="50px" height="50px" alt="">
+                                </a>
+                            </td>
+                            
+                          
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>6 Days</td>
+                            <td><img src="https://www.travelo.pk/images/packages/sep18saifulmulook_cover.png" alt="" width="60px" height="60px" class="rounded"></td>
+                            <td>33000</td>
+                            <td>Muhammad Hammad</td>
+                            <td>44402-6589647-9 </td>
+                            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjREoX8Gxt8QVn-p_ISmXjUpLAwUFffeNwMrly8mOwbQ&s" alt="" width="60px" height="60px" class="rounded"></td>
+                            <td>0323234434</td>
+                            <td>xyz@gmail.com</td>
+                            <td>Sawat</td>
                             <td>
                                 <a href="">
                                      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 48 48">
