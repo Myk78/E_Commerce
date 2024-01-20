@@ -114,7 +114,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3">
-                    <a href="#">
+                    <a href="{{route('front.Transport.Page')}}">
                         <div class="cat-card">
                             <div class="left">
                                 <img src="{{asset('front-assets/images/Transport.jpg')}}" alt="" class="img-fluid">
@@ -129,7 +129,7 @@
                     </a>
                 </div>
                 <div class="col-lg-3">
-                    <a href="#">
+                    <a href="{{route('front.Tour.package')}}">
                         <div class="cat-card">
                             <div class="left">
                                 <img src="{{asset('front-assets/images/tour Package.jpg')}}" alt="" class="img-fluid">
@@ -151,8 +151,8 @@
                          </div>
                          <div class="right">
                              <div class="cat-data">
-                             <h2 >Tour_Guide</h2>
-                                 {{-- <p>100 Products</p> --}}
+                             <h2 class="text-black">Tour Guide</h2>
+                                 {{-- <p>100 Products</p --}}
                              </div>
                          </div>
                      </div>
@@ -166,7 +166,7 @@
                             </div>
                             <div class="right">
                                 <div class="cat-data">
-                                    <h2 class="text-black">E-commerce</h2>
+                                    <h2 class="text-black">E-commerces</h2>
                                     <p></p>
                                 </div>
                             </div>
@@ -223,13 +223,13 @@
                             <a class="whishlist" href="222"><i class="far fa-heart"></i></a>                            
 
                             <div class="product-action">
-                                <a class="btn btn-dark" href="#">
+                                <a class="btn btn-dark" href="{{route('front.commerce.Productpage')}}">
                                     <i class="fa fa-shopping-cart"></i> Add To Cart
                                 </a>                            
                             </div>
                         </div>                        
                         <div class="card-body text-center mt-3">
-                            <a class="h6 link" href="product.php">Dummy Product Title</a>
+                            <a class="h6 link" href="{{route('front.commerce.Productpage')}}">Dummy Product Title</a>
                             <div class="price mt-2">
                                 <span class="h5"><strong>$100</strong></span>
                                 <span class="h6 text-underline"><del>$120</del></span>
@@ -258,7 +258,7 @@
                         </div>                        
                     </div>                                               
                 </div>  
-                <div class="col-md-3">
+                {{-- <div class="col-md-3">
                     <div class="card product-card">
                         <div class="product-image position-relative">
                             <a href="" class="product-img"><img class="card-img-top" src="{{asset('front-assets/images/product-3.jpg')}}" alt=""></a>
@@ -383,7 +383,7 @@
                             </div>
                         </div>                        
                     </div>                                               
-                </div>               
+                </div>                --}}
             </div>
         </div>
     </section>
@@ -396,29 +396,29 @@
             <div class="container">
                 <div class="row mx-auto">
                       <div class="col-md-6 mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">First Name</label>
+                        <label for="firstname" class="col-sm-2 col-form-label">First Name</label>
                         <div class="col-sm-10">
-                          <input type="name" class="form-control" id="inputEmail3">
+                          <input type="name" class="form-control" id="firstname">
                         </div>
                       </div>
                       <div class="col-12 col-md-6 mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Last Name</label>
+                        <label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
                         <div class="col-sm-10">
-                          <input type="name" class="form-control" id="inputEmail3">
-                        </div>
-                      </div>
-        
-                      <div class="col-12 col-md-6 mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Phonenum</label>
-                        <div class="col-sm-10">
-                          <input type="name" class="form-control" id="inputEmail3">
+                          <input type="name" class="form-control" id="lastname">
                         </div>
                       </div>
         
                       <div class="col-12 col-md-6 mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">City</label>
+                        <label for="number" class="col-sm-2 col-form-label">Phonenum</label>
                         <div class="col-sm-10">
-                          <input type="name" class="form-control" id="inputEmail3">
+                          <input type="name" class="form-control" id="number">
+                        </div>
+                      </div>
+        
+                      <div class="col-12 col-md-6 mb-3">
+                        <label for="city" class="col-sm-2 col-form-label">City</label>
+                        <div class="col-sm-10">
+                          <input type="name" class="form-control" id="city">
                         </div>
                       </div>
 
@@ -426,6 +426,12 @@
                         <label for="exampleFormControlInput1" class="form-label label">Email address</label>
                         <div class="col-sm-10">
                             <input type="email" class="form-control"  id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 mb-3">
+                        <label for="userquery" class="form-label label">Purpase</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="userquery" name="userquery" rows="3"></textarea>
                         </div>
                       </div>
                       <div class="col-12">

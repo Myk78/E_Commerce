@@ -19,24 +19,50 @@ use League\Flysystem\UrlGeneration\TemporaryUrlGenerator;
 // });
 
 
-// user side Home Page's
+// TourTracker Home Page route
 Route::get('/',[FrontController::class,'index'])->name('front.home');
 
 
-// user side hotel page's
+// --------------------CustomerSide hotel page route
 Route::get('/HotelDashboardPage',function () {
     return view('front.Hotel.home');
 })->name('front.Hotel.HotelPage');
+// Hoteldetail page route
+Route::get('/Hoteldetail',function () {
+    return view('front.Hotel.hoteldetail');
+})->name('front.Hotel.detail');
+
+// --------------------CustomerSide Tourpackage route
+Route::get('/TourPackageDashboardPage',function () {
+    return view('front.tourpackage.home');
+})->name('front.Tour.package');
+// Tourpackage page route
+Route::get('/Packagedetail',function () {
+    return view('front.tourpackage.packagedetail');
+})->name('front.Tour.detail');
+
+// --------------------CustomerSide Transport route
+Route::get('/TransportDashboardPage',function () {
+    return view('front.transport.home');
+})->name('front.Transport.Page');
+//  Transportdetail page route
+Route::get('/Transportdetail',function () {
+    return view('front.transport.Transportdetail');
+})->name('front.Transport.detail');
 
 
 
-// user side Ecommerce Route
+// --------------------CustomerSide Ecommerce Route
 Route::get('/Ecommercedashboard',[EfrontController::class,'index'])->name('front.commerce.home');
 Route::get('/Eshop',[EshopController::class,'index'])->name('front.commerce.shop');
+// Ecommerce product detail page route
+Route::get('/EcommerceProductPage',function () {
+    return view('front.commerce.product');
+})->name('front.commerce.Productpage');
 
 
 
-// user side tour guide route
+// -------------------- CustomerSide tour guide route
 Route::get('/TourGuide',[TourController::class,'index'])->name('front.tour');
 
 Route::get('/Tourdashboard',function () {
@@ -46,6 +72,16 @@ Route::get('/Tourdashboard',function () {
 Route::get('/TourGuide',function () {
     return view('front.TourGuide.Kpk');
 })->name('front.TourGuide.kpk');
+
+
+// -------------------- CustomerSide Registration & login route
+Route::get('/Registration',function () {
+    return view('front.Register');
+})->name('front.Register');
+
+Route::get('/Login',function () {
+    return view('front.login');
+})->name('front.login');
 
 
 
@@ -111,6 +147,12 @@ Route::get('/EditPackage',function () {
 Route::get('/tourBooking',function () {
     return view('admin.Tourtrip.booktour.list');
 })->name('admin.Tourtrip.booktour.list');
+
+// admin -------------------ContactUs routes
+Route::get('/ContactUs',function () {
+    return view('admin.ContactUs');
+})->name('admin.Contactus');
+
  
 
 

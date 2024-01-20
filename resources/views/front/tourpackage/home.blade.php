@@ -15,7 +15,7 @@
     
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3">
-                                <h1 class="display-4 text-white mb-3">Tour Tracker Hotel's</h1>
+                                <h1 class="display-4 text-white mb-3">Tour Tracker Package's</h1>
                                 <p class="mx-md-5 px-5">
     
                                 At Tour Tracker, we're more than just a travel agency - we're your trusted travel companion. With a passion for exploration and a commitment to convenience, we offer a comprehensive suite of services to make your journey memorable.</p>
@@ -32,7 +32,7 @@
     
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3">
-                                <h1 class="display-4 text-white mb-3">About's Hotel's</h1>
+                                <h1 class="display-4 text-white mb-3">About's our Package</h1>
                                 <p class="mx-md-5 px-5">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum diam</p>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
         <section class="section-4 pt-5">
             <div class="container">
                 <div class="section-title">
-                    <h2>About Hotel's</h2>
+                    <h2>About Packages</h2>
                 </div>    
                 <div class="row pb-3">
                     <div class="col-md-12">
@@ -90,10 +90,10 @@
         </section>
 
         <section class="section-4 pt-5">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Sawat Hotel's</h2>
-                </div>    
+            <div class="container">   
+                <div class="section-titles">
+                    <h2>Package's</h2>
+                </div>
                 <div class="row pb-3">
                     <div class="col-md-3">
                         <div class="card product-card">
@@ -103,16 +103,16 @@
     
                                 <div class="product-action">
                                     <a class="btn btn-dark" href="#">
-                                        <i class="fa fa-hotel"></i> Book Me
+                                        <i class="fa fa-hotel"></i>Book Me
                                     </a>                            
                                 </div>
                             </div>                        
                             <div class="card-body text-center mt-3">
-                                <div class="mb-2"><a class="h3 link" href="product.php">Sawat Lagon</a></div>
-                                <a class="h6 link" href="product.php">2 Person Room</a>
+                                <div class="mb-2"><a class="h3 link" href="product.php">4 Days trip in Sawat</a></div>
+                                <a class="h6 link" href="product.php">For 2 Person</a>
                                 <div class="price mt-2">
-                                    <span class="h5"><strong>Rs 4000 </strong></span>
-                                    <span class="h6 text-underline"><del>Rs 6000 </del></span>
+                                    <span class="h5"><strong>Rs 14000  </strong></span>
+                                    <span class="h6 text-underline"><del>Rs 16000 </del></span>
                                 </div>
                             </div>                        
                         </div>                                               
@@ -120,76 +120,25 @@
                     <div class="col-md-3">
                         <div class="card product-card">
                             <div class="product-image position-relative">
-                                <a href="{{route('front.Hotel.detail')}}" class="product-img"><img class="card-img-top" src="{{asset('front-assets/images/Hotels.jpg')}}" alt=""></a>
+                                <a href="{{route('front.Tour.detail')}}" class="product-img"><img class="card-img-top" src="{{asset('front-assets/images/Hotels.jpg')}}" alt=""></a>
                                 <a class="whishlist" href="222"><i class="far fa-heart"></i></a>                            
     
                                 <div class="product-action">
-                                    <a class="btn btn-dark" href="{{route('front.Hotel.detail')}}">
+                                    <a class="btn btn-dark" href="{{route('front.Tour.detail')}}">
                                         <i class="fa fa-hotel"></i> Book Me
                                     </a>                            
                                 </div>
                             </div>                        
                             <div class="card-body text-center mt-3">
-                                <div class="mb-2"><a class="h3 link" href="product.php">Sawat Lagon</a></div>
-                                <a class="h6 link" href="{{route('front.Hotel.detail')}}">2 Person Room</a>
+                                <div class="mb-2"><a class="h3 link" href="product.php"> 7 Days trip in kashmir</a></div>
+                                <a class="h6 link" href="{{route('front.Tour.detail')}}">For 2 Person</a>
                                 <div class="price mt-2">
-                                    <span class="h5"><strong>Rs 4000 </strong></span>
-                                    <span class="h6 text-underline"><del>Rs 6000 </del></span>
+                                    <span class="h5"><strong>Rs 18000 </strong></span>
+                                    <span class="h6 text-underline"><del>Rs 20000 </del></span>
                                 </div>
                             </div>                        
                         </div>                                               
                     </div>            
-                </div>
-            </div>
-            <div class="container">
-                <div class="section-title">
-                    <h2>Naran Hotel's</h2>
-                </div>    
-                <div class="row pb-3">
-                    <div class="col-md-3">
-                        <div class="card product-card">
-                            <div class="product-image position-relative">
-                                <a href="" class="product-img"><img class="card-img-top" src="{{asset('front-assets/images/Hotels.jpg')}}" alt=""></a>
-                                <a class="whishlist" href="222"><i class="far fa-heart"></i></a>                            
-    
-                                <div class="product-action">
-                                    <a class="btn btn-dark" href="#">
-                                        <i class="fa fa-hotel"></i> Book Me
-                                    </a>                            
-                                </div>
-                            </div>                        
-                            <div class="card-body text-center mt-3">
-                                <div class="mb-2"><a class="h3 link" href="product.php">Sawat Lagon</a></div>
-                                <a class="h6 link" href="product.php">2 Person Room</a>
-                                <div class="price mt-2">
-                                    <span class="h5"><strong>Rs 4000 </strong></span>
-                                    <span class="h6 text-underline"><del>Rs 6000 </del></span>
-                                </div>
-                            </div>                        
-                        </div>                                               
-                    </div>  
-                    <div class="col-md-3">
-                        <div class="card product-card">
-                            <div class="product-image position-relative">
-                                <a href="" class="product-img"><img class="card-img-top" src="{{asset('front-assets/images/Hotels.jpg')}}" alt=""></a>
-                                <a class="whishlist" href="222"><i class="far fa-heart"></i></a>                            
-    
-                                <div class="product-action">
-                                    <a class="btn btn-dark" href="#">
-                                        <i class="fa fa-hotel"></i> Book Me
-                                    </a>                            
-                                </div>
-                            </div>                        
-                            <div class="card-body text-center mt-3">
-                                <div class="mb-2"><a class="h3 link" href="product.php">Sawat Lagon</a></div>
-                                <a class="h6 link" href="product.php">2 Person Room</a>
-                                <div class="price mt-2">
-                                    <span class="h5"><strong>Rs 4000 </strong></span>
-                                    <span class="h6 text-underline"><del>Rs 6000 </del></span>
-                                </div>
-                            </div>                        
-                        </div>                                               
-                    </div>             
                 </div>
             </div>
         </section>

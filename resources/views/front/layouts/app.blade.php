@@ -34,6 +34,7 @@
 	
 
 	<link rel="stylesheet" type="text/css" href="{{asset('front-assets/css/slick.css')}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset('front-assets/css/utility.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('front-assets/css/slick-theme.css')}}" />
 	<link rel="stylesheet" type="text/css" href="{{asset('front-assets/css/style.css')}}" />
     <link rel="stylesheet" type="text/css" href="{{asset('front-assets/css/style.min.css')}}" />
@@ -42,6 +43,13 @@
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Raleway:ital,wght@0,400;0,600;0,800;1,200&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 
@@ -108,10 +116,22 @@
 							<li><a class="dropdown-item" href="{{ route('front.commerce.home')}}">Product</a></li>
 						</ul>
 					</li>
+					<li class="nav-item dropdown">
+						<button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							Products
+						</button>
+						<ul class="dropdown-menu dropdown-menu-dark">
+							<li><a class="dropdown-item" href="#">Sindhi Topi & Ajrak</a></li>
+							<li><a class="dropdown-item" href="#">Peshawari Topi</a></li>
+							<li><a class="dropdown-item" href="#">kashmiri Shawl</a></li>
+							<li><a class="dropdown-item" href="#">Shoes</a></li>
+							<li><a class="dropdown-item" href="#">Watches</a></li>
+							<li><a class="dropdown-item" href="#">Perfumes</a></li>
+						</ul>
+					</li>
 					<li class="nav-item ">
 						<button class="btn btn-dark ">
-							<a href="section-4">Contact Us</a>
-							{{--  --}}
+							<a href="section-4" class="text-white">Contact Us</a>
 						</button>
 					
 					</li>
@@ -132,8 +152,10 @@
       			</ul>      			
       		</div>  
 			  <div class="right-nav py-0">
-				
-			</div>
+				<a href="cart.php" class="ml-3 d-flex pt-2">
+					<i class="fas fa-shopping-cart text-primary"></i>					
+				</a>
+			</div> 
       	</nav>
   	</div>
 </header>

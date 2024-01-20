@@ -1,0 +1,21 @@
+hr{
+    border: none;
+    background-color: yellow;
+    height: 0px;
+}
+.section-titles {
+    position: relative;
+    padding-bottom:1.5em;
+    margin-bottom:1.5em;
+}
+
+.section-titles:after {
+    position: absolute;
+    content: '';
+    width: 230px;
+    height: 5px;
+    background-color: #f7ca0d;
+    left: auto;
+    bottom: auto;
+}
+

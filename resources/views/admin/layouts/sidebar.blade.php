@@ -24,39 +24,45 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{route('admin.Hotel.Hotelist')}}" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fas fa-hotel"></i>
                         <p>Hotel's</p>
                     </a>																
                 </li>
                 <li class="nav-item">
                     <a href="{{route('admin.Hotel.hotelbook.list')}}" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fas fa-hotel"></i>
                         <p>Hotel Booking</p>
                     </a>																
                 </li>
                 <li class="nav-item">
                     <a href="{{route('admin.Transport.list')}}" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fas fa-car"></i>
                         <p>Transport's</p>
                     </a>																
                 </li>
                 <li class="nav-item">
                     <a href="{{route('admin.Transport.bookTrans.list')}}" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fas fa-car"></i>
                         <p>Transport Booking</p>
                     </a>																
                 </li>
                 <li class="nav-item">
                     <a href="{{route('admin.Tourtrip.list')}}" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fa fa-plane"></i>
                         <p>TripPackage</p>
                     </a>																
                 </li>
                 <li class="nav-item">
                     <a href="{{route('admin.Tourtrip.booktour.list')}}" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fa fa-plane"></i>
                         <p>Trip Booking</p>
                     </a>																
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.Contactus')}}" class="nav-link">
+                        <i class=" nav-icon fas fa-address-book"></i>
+                        <p>Contact</p>
+                    </a>
                 </li>
                 
                 
@@ -73,25 +79,9 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="brands.html" class="nav-link">
-                        <svg class="h-6 nav-icon w-6 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                          </svg>
-                        <p>Brands</p>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a href="products.html" class="nav-link">
                         <i class="nav-icon fas fa-tag"></i>
                         <p>Products</p>
-                    </a>
-                </li>
-                
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <!-- <i class="nav-icon fas fa-tag"></i> -->
-                        <i class="fas fa-truck nav-icon"></i>
-                        <p>Shipping</p>
                     </a>
                 </li>							
                 <li class="nav-item">
