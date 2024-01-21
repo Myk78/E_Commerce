@@ -67,7 +67,7 @@
 				</a>
 			</div>
 			<div class="col-lg-6 col-6 text-left  d-flex justify-content-end align-items-center">
-				<a href="account.php" class="nav-link text-dark">My Account</a>
+				<a href="{{route('front.Account.detail')}}" class="nav-link text-dark">My Account</a>
 				<form action="">					
 					<div class="input-group">
 						<input type="text" placeholder="Search" class="form-control" aria-label="Amount (to the nearest dollar)">
@@ -140,19 +140,11 @@
 						<button class="btn btn-dark " data-bs-toggle="dropdown" aria-expanded="false">
 							About us
 						</button>
-						{{-- <ul class="dropdown-menu dropdown-menu-dark">
-							<li><a class="dropdown-item" href="#">TV</a></li>
-							<li><a class="dropdown-item" href="#">Washing Machines</a></li>
-							<li><a class="dropdown-item" href="#">Air Conditioners</a></li>
-							<li><a class="dropdown-item" href="#">Vacuum Cleaner</a></li>
-							<li><a class="dropdown-item" href="#">Fans</a></li>
-							<li><a class="dropdown-item" href="#">Air Coolers</a></li>
-						</ul> --}}
 					</li>
       			</ul>      			
       		</div>  
 			  <div class="right-nav py-0">
-				<a href="cart.php" class="ml-3 d-flex pt-2">
+				<a href="{{route('front.Cart.detail')}}" class="ml-3 d-flex pt-2">
 					<i class="fas fa-shopping-cart text-primary"></i>					
 				</a>
 			</div> 

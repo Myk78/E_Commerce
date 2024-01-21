@@ -61,6 +61,18 @@ Route::get('/EcommerceProductPage',function () {
 })->name('front.commerce.Productpage');
 
 
+// --------------------CustomerSide Cart Route
+Route::get('/Cart',function () {
+    return view('front.account.cart');
+})->name('front.Cart.detail');
+
+// --------------------CustomerSide Cart Route
+Route::get('/Account',function () {
+    return view('front.account.account');
+})->name('front.Account.detail');
+
+
+
 
 // -------------------- CustomerSide tour guide route
 Route::get('/TourGuide',[TourController::class,'index'])->name('front.tour');
@@ -142,6 +154,20 @@ Route::get('/Packageslist',function () {
 Route::get('/EditPackage',function () {
     return view('admin.Tourtrip.edit');
 })->name('admin.Tourtrip.edit');
+
+// admin -------------------Product routes
+ //create route
+ Route::get('/AddProduct',function () {
+    return view('admin.products.create');
+})->name('admin.Product.Additem');
+//list route
+Route::get('/Productlist',function () {
+    return view('admin.products.list');
+})->name('admin.product.list');
+//Edit route
+Route::get('/EditProduct',function () {
+    return view('admin.products.edit');
+})->name('admin.product.edit');
 
 //Transport booking in admin route
 Route::get('/tourBooking',function () {
