@@ -66,11 +66,23 @@ Route::get('/Cart',function () {
     return view('front.account.cart');
 })->name('front.Cart.detail');
 
-// --------------------CustomerSide Cart Route
+// --------------------CustomerSide Account Route
 Route::get('/Account',function () {
     return view('front.account.account');
 })->name('front.Account.detail');
 
+Route::get('/Orders',function () {
+    return view('front.account.order');
+})->name('front.Account.order');
+
+Route::get('/OrderDetails',function () {
+    return view('front.account.order-detail');
+})->name('front.Account.orderdetails');
+
+// --------------------CustomerSide Checkout Route
+Route::get('/CheckOut',function () {
+    return view('front.account.Checkoutpage');
+})->name('front.account.Checkoutpage');
 
 
 
@@ -169,7 +181,7 @@ Route::get('/EditProduct',function () {
     return view('admin.products.edit');
 })->name('admin.product.edit');
 
-//Transport booking in admin route
+//Tour booking in admin route
 Route::get('/tourBooking',function () {
     return view('admin.Tourtrip.booktour.list');
 })->name('admin.Tourtrip.booktour.list');
@@ -178,6 +190,16 @@ Route::get('/tourBooking',function () {
 Route::get('/ContactUs',function () {
     return view('admin.ContactUs');
 })->name('admin.Contactus');
+
+// admin -------------------order routes
+Route::get('/Order',function () {
+    return view('admin.Oders.orderlist');
+})->name('admin.Oders.orderlist');
+
+Route::get('/OrderDetai;',function () {
+    return view('admin.Oders.orderdetail');
+})->name('admin.Oders.orderdetail');
+
 
  
 

@@ -85,7 +85,7 @@
                     </a>
                 </li>							
                 <li class="nav-item">
-                    <a href="orders.html" class="nav-link">
+                    <a href="{{route('admin.Oders.orderlist')}}" class="nav-link">
                         <i class="nav-icon fas fa-shopping-bag"></i>
                         <p>Orders</p>
                     </a>

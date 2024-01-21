@@ -109,17 +109,19 @@
         </div>           
         <div class="row pb-3">
             <div class="col-lg-3">
-                <div class="cat-card">
-                    <div class="left">
-                        <img src="{{asset('Ecomfront-assets/images/cat-1.jpg')}}" alt="" class="img-fluid">
-                    </div>
-                    <div class="right">
-                        <div class="cat-data">
-                            <h2>Mens</h2>
-                            <p>100 Products</p>
+               <a href="{{route('front.commerce.shop')}}">
+                 <div class="cat-card">
+                        <div class="left">
+                            <img src="{{asset('Ecomfront-assets/images/cat-1.jpg')}}" alt="" class="img-fluid">
                         </div>
-                    </div>
-                </div>
+                     <div class="right">
+                            <div class="cat-data">
+                                <h2 class="text-black">Mens</h2>
+                                <p>100 Products</p>
+                         </div>
+                     </div>
+                 </div>
+            </a>
             </div>
             <div class="col-lg-3">
                 <div class="cat-card">
@@ -134,20 +136,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="cat-card">
-                    <div class="left">
-                        <img src="{{asset('Ecomfront-assets/images/cat-1.jpg')}}" alt="" class="img-fluid">
-                    </div>
-                    <div class="right">
-                        <div class="cat-data">
-                            <h2>Mens</h2>
-                            <p>100 Products</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>

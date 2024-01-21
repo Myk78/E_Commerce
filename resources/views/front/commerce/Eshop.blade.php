@@ -1,10 +1,10 @@
-@extends('front.commerce.layouts.app')
+@extends('front.layouts.app')
 @section('content')
 <section class="section-5 pt-3 pb-3 mb-3 bg-white">
     <div class="container">
         <div class="light-font">
             <ol class="breadcrumb primary-color mb-0">
-                <li class="breadcrumb-item"><a class="white-text" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="white-text" href="{{route('front.commerce.home')}}">E commerce</a></li>
                 <li class="breadcrumb-item active">Shop</li>
             </ol>
         </div>
@@ -25,17 +25,15 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Electronics
+                                        Topi
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                                     <div class="accordion-body">
                                         <div class="navbar-nav">
-                                            <a href="" class="nav-item nav-link">Mobile</a>
-                                            <a href="" class="nav-item nav-link">Tablets</a>
-                                            <a href="" class="nav-item nav-link">Laptops</a>
-                                            <a href="" class="nav-item nav-link">Speakers</a>
-                                            <a href="" class="nav-item nav-link">Watches</a>                                            
+                                            <a href="" class="nav-item nav-link">Sindhi topi</a>
+                                            <a href="" class="nav-item nav-link">Peshawari topi</a>
+                                            <a href="" class="nav-item nav-link">Punjabi topi</a>                                           
                                         </div>
                                     </div>
                                 </div>
@@ -44,17 +42,16 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Men's Fashion
+                                        Chapal
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                                     <div class="accordion-body">
                                         <div class="navbar-nav">
-                                            <a href="" class="nav-item nav-link">Shirts</a>
-                                            <a href="" class="nav-item nav-link">Jeans</a>
-                                            <a href="" class="nav-item nav-link">Shoes</a>
-                                            <a href="" class="nav-item nav-link">Watches</a>
-                                            <a href="" class="nav-item nav-link">Perfumes</a>                                            
+                                            <a href="" class="nav-item nav-link">Sindhi Chapal</a>
+                                            <a href="" class="nav-item nav-link">punjabi chapal</a>
+                                            <a href="" class="nav-item nav-link">Peshawari chapal</a>
+                                         
                                         </div>
                                     </div>
                                 </div>                                                              
@@ -63,18 +60,14 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Women's Fashion
+                                        Sawat xyz
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                                     <div class="accordion-body">
                                         <div class="navbar-nav">
                                             <a href="" class="nav-item nav-link">T-Shirts</a>
-                                            <a href="" class="nav-item nav-link">Tops</a>
-                                            <a href="" class="nav-item nav-link">Jeans</a>
-                                            <a href="" class="nav-item nav-link">Shoes</a>
-                                            <a href="" class="nav-item nav-link">Watches</a>
-                                            <a href="" class="nav-item nav-link">Perfumes</a>                                            
+                                            <a href="" class="nav-item nav-link">Tops</a>                                        
                                         </div>
                                     </div>
                                 </div>                                                              
@@ -83,57 +76,20 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        Applicances
+                                        Kashmiri shahall
                                     </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                                     <div class="accordion-body">
                                         <div class="navbar-nav">
-                                            <a href="" class="nav-item nav-link">TV</a>
-                                            <a href="" class="nav-item nav-link">Washing Machines</a>
-                                            <a href="" class="nav-item nav-link">Air Conditioners</a>
-                                            <a href="" class="nav-item nav-link">Vacuum Cleaner</a>
-                                            <a href="" class="nav-item nav-link">Fans</a>
-                                            <a href="" class="nav-item nav-link">Air Coolers</a>                                            
+                                            <a href="" class="nav-item nav-link">Women Shahall</a>
+                                            <a href="" class="nav-item nav-link">Mens Shahall</a>                                          
                                         </div>
                                     </div>
                                 </div>                                                              
                             </div>                 
                                                 
                         </div>
-                    </div>
-                </div>
-
-                <div class="sub-title mt-5">
-                    <h2>Brand</h3>
-                </div>
-                
-                <div class="card">
-                    <div class="card-body">
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Canon
-                            </label>
-                        </div>
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Sony
-                            </label>
-                        </div>                 
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Oppo
-                            </label>
-                        </div> 
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                Vivo
-                            </label>
-                        </div>                 
                     </div>
                 </div>
 
@@ -190,7 +146,7 @@
                     <div class="col-md-4">
                         <div class="card product-card">
                             <div class="product-image position-relative">
-                                <a href="" class="product-img"><img class="card-img-top" src="images/product-1.jpg" alt=""></a>
+                                <a href="" class="product-img"><img class="card-img-top" src="{{asset('front-assets/images/product-1.jpg')}}" alt=""></a>
                                 <a class="whishlist" href="222"><i class="far fa-heart"></i></a>                            
 
                                 <div class="product-action">
@@ -212,11 +168,11 @@
                     <div class="col-md-4">
                         <div class="card product-card">
                             <div class="product-image position-relative">
-                                <a href="" class="product-img"><img class="card-img-top" src="images/product-1.jpg" alt=""></a>
+                                <a href="" class="product-img"><img class="card-img-top" src="{{asset('front-assets/images/product-2.jpg')}}" alt=""></a>
                                 <a class="whishlist" href="222"><i class="far fa-heart"></i></a>                            
 
                                 <div class="product-action">
-                                    <a class="btn btn-dark" href="#">
+                                    <a class="btn btn-dark" href="{{route('front.commerce.Productpage')}}">
                                         <i class="fa fa-shopping-cart"></i> Add To Cart
                                     </a>                            
                                 </div>
@@ -234,7 +190,7 @@
                     <div class="col-md-4">
                         <div class="card product-card">
                             <div class="product-image position-relative">
-                                <a href="" class="product-img"><img class="card-img-top" src="images/product-1.jpg" alt=""></a>
+                                <a href="" class="product-img"><img class="card-img-top" src="{{asset('front-assets/images/product-3.jpg')}}" alt=""></a>
                                 <a class="whishlist" href="222"><i class="far fa-heart"></i></a>                            
 
                                 <div class="product-action">
@@ -402,6 +358,6 @@
             </div>
         </div>
     </div>
-</section>
+    </section>
     
 @endsection

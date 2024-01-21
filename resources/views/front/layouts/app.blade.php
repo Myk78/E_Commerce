@@ -110,9 +110,9 @@
 						</button>
 						<ul class="dropdown-menu dropdown-menu-dark">
 							<li><a class="dropdown-item" href="{{ route('front.Hotel.HotelPage') }}">Hotel</a></li>
-							<li><a class="dropdown-item" href="#">Transport</a></li>
-							<li><a class="dropdown-item" href="{{ route('front.tour')}}">TourPackage</a></li>
-							<li><a class="dropdown-item" href="#">TouristAttraction</a></li>
+							<li><a class="dropdown-item" href="{{ route('front.Transport.Page')}}">Transport</a></li>
+							<li><a class="dropdown-item" href="{{ route('front.Tour.package')}}">TourPackage</a></li>
+							<li><a class="dropdown-item" href="{{ route('front.tour')}}">TouristAttraction</a></li>
 							<li><a class="dropdown-item" href="{{ route('front.commerce.home')}}">Product</a></li>
 						</ul>
 					</li>
